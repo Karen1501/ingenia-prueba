@@ -1,0 +1,41 @@
+.footerContainer {
+  background-color: rgb(204, 199, 199);
+  color: gray;
+}
+
+.navFooter {
+  background-color: rgb(204, 199, 199);
+}
+
+.usaContact {
+  margin-top: 50px;
+  font-size: small;
+}
+
+.privacy {
+  font-size: small;
+}
+
+.iconSocial {
+  width: 15%;
+  height: 15%;
+}
+
+.socialWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: flex-end;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.linksFooter a {
+  color: black;
+  border-left: solid 1px rgb(145, 142, 142);
+  padding: 5px;
+}

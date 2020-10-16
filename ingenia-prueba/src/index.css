@@ -61,6 +61,41 @@
   border: solid 1px rgb(255, 115, 0);
 }
 
+.nav-link {
+  background-color: white;
+  color: black;
+  font-size: small;
+  border-radius: 0;
+}
+
 .textVisit {
   display: flex;
+  font-size: 15px;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.cardPlace {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.mexSmall {
+  font-size: 11px;
+  color: rgb(168, 165, 165);
+}
+
+.placeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.direction {
+  color: rgb(168, 165, 165);
+}
+
+.place {
+  margin-bottom: 0;
 }

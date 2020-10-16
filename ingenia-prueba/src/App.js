@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./index.css";
 
 //Components
 import HeaderCard from "./Components/HeaderCard/HeaderCard";
 import ContactForm from "./Components/ContactForm/ContactForm";
+import Footer from "./Components/Footer/Footer";
 
 import {
   Container,
@@ -118,12 +119,13 @@ function App() {
         <Row>
           <Col xs="12" md="12">
             <p className="textVisit">
-              Coming to visit us?{" "}
+              <b>Coming to visit us?</b>
               <span className="text-muted">
+                {" "}
                 Here are some of our favorite places around town to
               </span>
               <UncontrolledDropdown setActiveFromChild className="dropDownMenu">
-                <DropdownToggle className="nav-link" caret>
+                <DropdownToggle className="nav-link btn-sm width-20px" caret>
                   A quiet place to read a book
                 </DropdownToggle>
                 <DropdownMenu>
@@ -136,55 +138,85 @@ function App() {
 
         <Row>
           <Col xs="12" md="6">
-            <div>
-              <p>MEXICO CITY</p>
-              <p>
-                Name of place <img src="/icon_places.png" />
+            <div className="cardPlace">
+              <p className="mexSmall">
+                {" "}
+                <small>MEXICO CITY</small>
               </p>
-              <span>123 Main St</span>
+              <p className="place">
+                <b> Name of place</b>
+                <img src="/icon_places.png" className="placeIcon" />
+              </p>
+              <span className="direction">
+                <small>123 Main St</small>
+              </span>
               <p className="text-muted">
-                amazing burguers, <br />
-                impromteau jazz trios
+                <small>
+                  amazing burguers,
+                  <br />
+                  impromteau jazz trios
+                </small>
               </p>
-            </div>
 
-            <div>
-              <p>
-                Name of place <img src="/icon_places.png" />
-              </p>
-              <span>123 Main St</span>
-              <p className="text-muted">
-                amazing burguers, <br />
-                impromteau jazz trios
-              </p>
+              <div className="cardPlace">
+                <p className="place">
+                  <b> Name of place</b>
+                  <img src="/icon_places.png" className="placeIcon" />
+                </p>
+                <span className="direction">
+                  {" "}
+                  <small>123 Main St</small>
+                </span>
+                <p className="text-muted">
+                  <small>
+                    amazing burguers, <br />
+                    impromteau jazz trios
+                  </small>
+                </p>
+              </div>
             </div>
           </Col>
           <Col xs="12" md="6">
             <div>
-              <p>MEXICO CITY</p>
+              <p className="mexSmall">
+                {" "}
+                <small>USA</small>
+              </p>
 
-              <p>
-                <img src="/icon_places.png" />
-                Name of place
+              <p className="place">
+                <img src="/icon_places.png" className="placeIcon" />
+                <b> Name of place</b>
               </p>
-              <span>123 Main St</span>
-              <p>
-                amazing burguers, <br />
-                impromteau jazz trios
+              <span className="direction">
+                {" "}
+                <small>123 Main St</small>
+              </span>
+              <p className="text-muted">
+                <small>
+                  amazing burguers, <br />
+                  impromteau jazz trios
+                </small>
               </p>
-              <p>
-                <img src="/icon_places.png" />
-                Name of place
+
+              <p className="place">
+                <img src="/icon_places.png" className="placeIcon" />
+                <b> Name of place</b>
               </p>
-              <span>123 Main St</span>
-              <p>
-                amazing burguers, <br />
-                impromteau jazz trios
+              <span className="direction">
+                {" "}
+                <small>123 Main St</small>
+              </span>
+              <p className="text-muted">
+                <small>
+                  amazing burguers, <br />
+                  impromteau jazz trios
+                </small>
               </p>
             </div>
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 }
